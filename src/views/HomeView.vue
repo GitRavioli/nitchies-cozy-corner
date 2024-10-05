@@ -16,7 +16,8 @@
           <h2 class="text-lg sm:text-xl lg:text-2xl font-pixel text-white text-center mb-4">Welcome to Nitchie's Cozy
             Corner!</h2>
           <p class="text-xs sm:text-sm md:text-base font-pixel-proper text-white text-center">
-            Welcome to Nitchie’s Cozy Cabin, a warm haven for gamers and dreamers alike. Here, you’ll find game reviews,
+            Welcome to Nitchie’s Cozy Cabin, a warm haven for gamers and dreamers alike. Here, you’ll find the latest
+            games I have been playing,
             chill vibes, and friendly stories to enjoy with your favorite drink. Whether diving into a pixelated
             adventure or unwinding in comfort, this is your cozy corner on the web. So wrap yourself in a blanket, grab
             a hot cocoa, and stay awhile. Welcome home!
