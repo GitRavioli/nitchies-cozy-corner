@@ -3,7 +3,7 @@
     <!-- Header Section: Cabin and Campfire Illustration -->
     <header class="relative w-full h-[40rem] bg-[#8C7A6B] bg-opacity-80 sm:h-[30rem] md:h-[35rem] lg:h-[50rem]">
       <div
-        class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-bottom bg-[url('src/assets/cabin_2.jpg')] pointer-events-none">
+        class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-bottom bg-[url('public/Img/cabin_2.jpg')] pointer-events-none">
       </div>
 
       <!-- Navigation -->

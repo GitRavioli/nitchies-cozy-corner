@@ -106,7 +106,7 @@
 
         <div class="mt-6">
             <!-- Back-to-Top with Pixelated Handheld Game Console -->
-            <img src="@/assets/handheld-game-console.png" alt="Handheld Console Icon"
+            <img src="public/Img/handheld-game-console.png" alt="Handheld Console Icon"
                 class="w-8 h-8 inline-block sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
             <a href="#" class="font-pixel text-[#5E5242] text-sm sm:text-base lg:text-lg">Back to top</a>
         </div>
