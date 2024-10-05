@@ -1,7 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import { RouterLink } from 'vue-router';
-import { Analytics } from "@vercel/analytics/react"
 
 </script>
 
