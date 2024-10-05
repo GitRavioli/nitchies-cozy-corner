@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-[#FDDFB7] flex flex-col items-center">
     <!-- Header Section: Cabin and Campfire Illustration -->
-    <header class="relative w-full h-[40rem] bg-[#8C7A6B] bg-opacity-80 sm:h-[30rem] md:h-[35rem] lg:h-[50rem]">
+    <header class="relative w-full h-[35rem] md:h-[40rem] lg:h-[50rem]">
       <div
         class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-bottom bg-[url('/Img/cabin_2.jpg')] pointer-events-none">
       </div>
@@ -10,33 +10,31 @@
       <Navbar />
 
       <!-- Centered Welcome Content -->
-      <div class="absolute inset-0 flex justify-center items-center z-30 p-4 sm:p-6 lg:p-8">
+      <div class="absolute inset-0 flex flex-col justify-center items-center z-30 p-4 sm:p-6 lg:p-8">
         <div
-          class="bg-[#B87C52]/50 p-6 rounded-lg shadow-lg max-w-md w-11/12 sm:w-2/3 lg:h-80 flex flex-col justify-center items-center">
-          <h2 class="text-xl sm:text-lg lg:text-xl font-pixel text-white text-center mb-4">Welcome to Nitchie's Cozy
+          class="bg-[#834458]/50 p-4 sm:p-5 rounded-lg shadow-lg max-w-md w-5/8 sm:w-2/3 lg:max-w-lg flex flex-col justify-center items-center">
+          <h2 class="text-lg sm:text-xl lg:text-2xl font-pixel text-white text-center mb-4">Welcome to Nitchie's Cozy
             Corner!</h2>
-          <p class="text-sm sm:text-xs font-pixel-proper text-white text-center">
-            Step inside and experience a world of warmth and nostalgia. Nitchie’s Cozy Cabin is a haven for gamers,
-            dreamers, and anyone seeking a bit of cozy comfort. Here, you’ll find game reviews, chill vibes, and
-            friendly fireside stories to enjoy while sipping your favorite drink. Whether you're diving into a
-            pixelated adventure or simply looking for a place to unwind, this is your cozy corner on the web. So wrap
-            yourself in a blanket, grab a hot cocoa, and stay awhile. Welcome home!
+          <p class="text-xs sm:text-sm md:text-base font-pixel-proper text-white text-center">
+            Welcome to Nitchie’s Cozy Cabin, a warm haven for gamers and dreamers alike. Here, you’ll find game reviews,
+            chill vibes, and friendly stories to enjoy with your favorite drink. Whether diving into a pixelated
+            adventure or unwinding in comfort, this is your cozy corner on the web. So wrap yourself in a blanket, grab
+            a hot cocoa, and stay awhile. Welcome home!
           </p>
         </div>
       </div>
     </header>
 
-
     <!-- Main Section: 4 Columns with Independent Sizes -->
-    <section class="w-full max-w-screen-xl p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-auto">
+    <section class="w-full max-w-screen-xl p-4 sm:p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
       <!-- First Column: Welcome Card -->
       <div
-        class="bg-[#F0E1C8] text-center p-6 rounded-xl flex flex-col justify-between items-center shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105">
+        class="bg-[#F0E1C8] text-center p-4 sm:p-6 rounded-xl flex flex-col justify-between items-center shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105">
         <!-- Notebook -->
-        <div class="p-6 rounded-s-md">
+        <div class="p-6 rounded-s-md w-full max-w-xs sm:max-w-sm lg:max-w-md"> <!-- Adjusted here -->
           <div
-            class="notebook bg-white shadow-lg w-80 h-[500px] relative border-4 border-[#E7D9C4] rounded-lg overflow-hidden">
+            class="notebook bg-white shadow-lg w-full h-auto relative border-4 border-[#E7D9C4] rounded-lg overflow-hidden">
             <!-- Spiral binding -->
             <div class="spiral-binding absolute top-0 left-[25px] w-1 h-full bg-gray-700"></div>
             <div class="spirals absolute top-0 left-0 w-full h-full flex flex-col justify-between p-1">
@@ -65,14 +63,14 @@
 
       <!-- Second Column: Journal Entry -->
       <div
-        class="p-6 rounded-xl bg-[#ECDAC3] shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105">
+        class="p-4 sm:p-6 rounded-xl bg-[#ECDAC3] shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105">
         <h1
           class="text-xl font-pixel text-[#D4A57E] mb-4 text-center underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-[#D4A57E]">
           Game Reviews
         </h1>
-        <div class="bg-[#D7C5AE] p-6 rounded-xl">
+        <div class="bg-[#D7C5AE] p-4 sm:p-6 rounded-xl">
           <img class="h-36 w-auto mx-auto" src="/Img/ghost_706023.png" alt="image description">
-          <h3 class="text-xl my-5 font-pixel text-white text-center mb-5">Game Reviews</h3>
+          <h3 class="text-lg my-5 font-pixel text-white text-center mb-5">Game Reviews</h3>
           <p class="text-sm font-pixel-proper text-[#5E5242]">
             Welcome to Nitchie's Cozy Corner, where we explore delightful games that warm the heart and spark joy.
             Discover reviews on cozy titles perfect for unwinding after a long day.
@@ -83,31 +81,31 @@
       <!-- Third Column: Game Review Cards -->
       <div class="h-auto">
         <div
-          class="bg-[#D5BAA3] p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 mb-6">
-          <h3 class="text-xl font-pixel text-white mb-4">Stardew Valley</h3>
+          class="bg-[#D5BAA3] p-4 sm:p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 mb-6">
+          <h3 class="text-lg font-pixel text-white mb-4">Stardew Valley</h3>
           <p class="text-sm font-pixel-proper text-white">A delightful farming game filled with charm.</p>
         </div>
         <div
-          class="bg-[#C9AD8C] p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 mb-6">
-          <h3 class="text-xl font-pixel text-white mb-4">The Long Dark</h3>
+          class="bg-[#C9AD8C] p-4 sm:p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 mb-6">
+          <h3 class="text-lg font-pixel text-white mb-4">The Long Dark</h3>
           <p class="text-sm font-pixel-proper text-white">Survive in the freezing wilderness with limited resources.</p>
         </div>
         <div
-          class="bg-[#E0B7B3] p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 mb-6">
-          <h3 class="text-xl font-pixel text-white mb-4">Hades</h3>
+          class="bg-[#E0B7B3] p-4 sm:p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 mb-6">
+          <h3 class="text-lg font-pixel text-white mb-4">Hades</h3>
           <p class="text-sm font-pixel-proper text-white">A fast-paced roguelike with engaging combat and narrative.</p>
         </div>
         <div
-          class="bg-[#D19D82] p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 mb-6">
-          <h3 class="text-xl font-pixel text-white mb-4">Animal Crossing</h3>
+          class="bg-[#D19D82] p-4 sm:p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 mb-6">
+          <h3 class="text-lg font-pixel text-white mb-4">Animal Crossing</h3>
           <p class="text-sm font-pixel-proper text-white">Create your perfect island getaway at your own pace.</p>
         </div>
       </div>
 
       <!-- Fourth Column: Cozy Playlist -->
       <div
-        class="bg-[#DECAB2] p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105">
-        <h3 class="text-xl font-pixel text-white">Cozy Playlist</h3>
+        class="bg-[#DECAB2] p-4 sm:p-6 rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105">
+        <h3 class="text-lg font-pixel text-white">Cozy Playlist</h3>
         <p class="text-sm my-5 text-white font-pixel-proper">
           Relax with Nitchie’s favorite chill gaming tunes, perfect for a cozy night in. Grab a blanket, hit play, and
           let the soothing melodies fill the air.
@@ -121,7 +119,6 @@
       </div>
 
     </section>
-
 
     <!-- Footer with Pixel Art Icons and Back-to-Top Button -->
     <footer class="w-full py-6 text-center sm:py-8 lg:py-10 relative">

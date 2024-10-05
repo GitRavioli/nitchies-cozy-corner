@@ -15,7 +15,7 @@
                     class="bg-[#B87C52]/50 p-6 rounded-lg shadow-lg max-w-md w-11/12 sm:w-2/3 lg:h-80 flex flex-col justify-center items-center">
                     <h2 class="text-xl sm:text-lg lg:text-xl font-pixel text-white text-center mb-4">About Nitchie
                     </h2>
-                    <p class="mt-4 font-pixel-proper text-white text-sm md:text-base">
+                    <p class="mt-4 font-pixel-proper text-center text-white text-sm md:text-base">
                         Welcome to the little corner of the internet that embodies the warm, inviting spirit of
                         Nitch—a cozy, introverted homebody on a journey of self-love and peace of mind.
                     </p>
@@ -100,14 +100,17 @@
     </div>
 
     <!-- Footer with Pixel Art Icons and Back-to-Top Button -->
-    <footer class="w-full py-6 text-center sm:py-8 lg:py-10 bg-[#E7D9C4]"> <!-- Warm taupe -->
+    <footer class="w-full py-6 text-center sm:py-8 lg:py-10 relative">
         <p class="font-pixel text-[#5E5242] text-sm sm:text-base lg:text-md">&copy; 2024 Cozy Cabin. All rights
-            reserved.</p>
+            reserved.
+        </p>
 
         <div class="mt-6">
-            <!-- <img src="/Img/handheld-game-console.png" alt="Handheld Console Icon"
-                class="w-8 h-8 inline-block sm:w-10 sm:h-10 lg:w-12 lg:h-12" /> -->
-            <a href="#" class="font-pixel text-[#5E5242] text-sm sm:text-base lg:text-lg">Back to top</a>
+            <!-- Back-to-Top with Pixelated Handheld Game Console -->
+            <img :style="consoleStyle" src="/Img/handheld-game-console.png" alt="Handheld Console Icon"
+                class="w-8 h-8 inline-block sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
+            <a href="#" class="font-pixel text-[#5E5242] text-sm sm:text-base lg:text-lg" :style="textStyle">Back to
+                top</a>
         </div>
     </footer>
 </template>
