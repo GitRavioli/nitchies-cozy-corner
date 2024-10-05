@@ -3,7 +3,7 @@
         <!-- Header Section: About Page -->
         <header class="relative w-full h-[40rem] bg-[#E7D9C4] bg-opacity-80 sm:h-[30rem] md:h-[35rem] lg:h-[50rem]">
             <div
-                class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-bottom bg-[url('public/Img/cozy_gamer.jpeg')] pointer-events-none">
+                class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-bottom bg-[url('/Img/cozy_gamer.jpeg')] pointer-events-none">
             </div>
 
             <!-- Navigation -->
@@ -39,7 +39,7 @@
                             class="transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 bg-[#8A5A35] p-6 rounded-lg shadow-lg">
                             <h2 class="text-3xl font-bold text-center text-white font-pixel mb-4">Stardew Valley
                             </h2>
-                            <img src="public/Img/stardew-valley-logo.webp" alt="Featured Game"
+                            <img src="/Img/stardew-valley-logo.webp" alt="Featured Game"
                                 class="w-auto h-60 mx-auto mb-4" />
                             <p class="text-sm font-pixel-proper text-[#F1E9D3]">Discover the magic of this cozy game
                                 that brings
@@ -126,7 +126,7 @@
                             <!-- Cozy Blanket Section -->
                             <div
                                 class="transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 bg-[#8A5A35] p-4 rounded-lg shadow-lg flex flex-col items-center">
-                                <img class="h-16 text-white mb-2" src="public/Img/blanket.png" alt="Cozy Blanket">
+                                <img class="h-16 text-white mb-2" src="/Img/blanket.png" alt="Cozy Blanket">
                                 <h3 class="text-md mb-4 font-bold font-pixel text-[#F1E9D3]">Cozy Blanket</h3>
                                 <p class="font-pixel-proper text-sm text-[#F1E9D3] text-center">Stay warm and comfy
                                     during your
@@ -174,7 +174,7 @@
 
             <div class="mt-6">
                 <!-- Back-to-Top with Pixelated Handheld Game Console -->
-                <img src="public/Img/handheld-game-console.png" alt="Handheld Console Icon"
+                <img src="/Img/handheld-game-console.png" alt="Handheld Console Icon"
                     class="w-8 h-8 inline-block sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
                 <a href="#" class="font-pixel-proper text-[#5E5242] text-sm sm:text-base lg:text-lg">Back to top</a>
             </div>
@@ -184,10 +184,10 @@
 
 <script setup>
 
-import stardewImage from 'public/Img/stardew-valley-logo.webp';
-import hadesImage from 'public/Img/hades.jpg';
-import longDarkImage from 'public/Img/the_long_dark.jpg';
-import animalCrossing from 'public/Img/animal_crossing.jpeg';
+import stardewImage from '/Img/stardew-valley-logo.webp';
+import hadesImage from '/Img/hades.jpg';
+import longDarkImage from '/Img/the_long_dark.jpg';
+import animalCrossing from '/Img/animal_crossing.jpeg';
 
 </script>
 
