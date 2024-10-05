@@ -3,7 +3,7 @@
         <!-- Header Section: Cabin and Campfire Illustration -->
         <header class="relative w-full h-screen bg-opacity-80 z-50 flex items-center justify-center">
             <div
-                class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center bg-[url('public/Img/cabin.jpeg')]">
+                class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center bg-[url('/Img/cabin.jpeg')]">
             </div>
             <!-- Main Section (centered horizontally and vertically) -->
             <main class="relative z-10 text-center p-4">
