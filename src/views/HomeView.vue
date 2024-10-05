@@ -3,7 +3,7 @@
     <!-- Header Section: Cabin and Campfire Illustration -->
     <header class="relative w-full h-[40rem] bg-[#8C7A6B] bg-opacity-80 sm:h-[30rem] md:h-[35rem] lg:h-[50rem]">
       <div
-        class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-bottom bg-[url('public/Img/cabin_2.jpg')] pointer-events-none">
+        class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-bottom bg-[url('/Img/cabin_2.jpg')] pointer-events-none">
       </div>
 
       <!-- Navigation -->
@@ -54,11 +54,11 @@
         </div>
         <!-- Social media icons at the bottom -->
         <div class="mt-4 flex justify-center gap-4">
-          <img src="@/assets/discord_icon.png" alt="Discord Icon"
+          <img src="/Img/discord_icon.png" alt="Discord Icon"
             class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 transition hover:scale-110" />
-          <img src="@/assets/youtube_icon.png" alt="YouTube Icon"
+          <img src="/Img/youtube_icon.png" alt="YouTube Icon"
             class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 transition hover:scale-110" />
-          <img src="@/assets/trophy_icon.png" alt="Trophy Icon"
+          <img src="/Img/trophy_icon.png" alt="Trophy Icon"
             class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 transition hover:scale-110" />
         </div>
       </div>
@@ -71,7 +71,7 @@
           Game Reviews
         </h1>
         <div class="bg-[#D7C5AE] p-6 rounded-xl">
-          <img class="h-36 w-auto mx-auto" src="@/assets/ghost_706023.png" alt="image description">
+          <img class="h-36 w-auto mx-auto" src="/Img/ghost_706023.png" alt="image description">
           <h3 class="text-xl my-5 font-pixel text-white text-center mb-5">Game Reviews</h3>
           <p class="text-sm font-pixel-proper text-[#5E5242]">
             Welcome to Nitchie's Cozy Corner, where we explore delightful games that warm the heart and spark joy.
@@ -130,7 +130,7 @@
 
       <div class="mt-6">
         <!-- Back-to-Top with Pixelated Handheld Game Console -->
-        <img :style="consoleStyle" src="@/assets/handheld-game-console.png" alt="Handheld Console Icon"
+        <img :style="consoleStyle" src="/Img/handheld-game-console.png" alt="Handheld Console Icon"
           class="w-8 h-8 inline-block sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
         <a href="#" class="font-pixel text-[#5E5242] text-sm sm:text-base lg:text-lg" :style="textStyle">Back to top</a>
       </div>
