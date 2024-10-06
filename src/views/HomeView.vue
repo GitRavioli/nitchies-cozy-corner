@@ -44,7 +44,7 @@
         <!-- Notebook -->
         <div class="p-6 rounded-s-md w-full max-w-xs sm:max-w-sm lg:max-w-md">
           <div
-            class="notebook bg-[#E7D9C4] shadow-md w-full h-auto relative border-4 border-[#C9B8A1] rounded-lg overflow-hidden">
+            class="shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 notebook bg-[#E7D9C4] w-full h-auto relative border-4 border-[#C9B8A1] rounded-lg overflow-hidden">
             <!-- Spiral binding -->
             <div class="spiral-binding absolute top-0 left-[25px] w-1 h-full bg-[#8B5C48]"></div>
             <div class="spirals absolute top-0 left-0 w-full h-full flex flex-col justify-between p-1">
