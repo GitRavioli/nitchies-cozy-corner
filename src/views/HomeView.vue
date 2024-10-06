@@ -155,8 +155,8 @@ export default {
       const now = new Date().getTime();
       const lastQuoteTimestamp = localStorage.getItem('lastQuoteTimestamp');
 
-      // Check if 24 hours have passed
-      if (!lastQuoteTimestamp || now - lastQuoteTimestamp >= 86400000) {
+      // Check if 6 hours have passed
+      if (!lastQuoteTimestamp || now - lastQuoteTimestamp >= 21600000) {
         const newQuote = this.getRandomQuote(quotes);
         this.dailyQuote = newQuote;
         localStorage.setItem('dailyQuote', JSON.stringify(newQuote));
