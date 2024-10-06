@@ -4,6 +4,7 @@ import GameReview from "@/views/GameReview.vue"; // Review Page for individual g
 import GameCorner from "@/views/GameCorner.vue";
 import AboutView from "../views/AboutView.vue";
 import HomeView from "../views/HomeView.vue";
+import Changelog from "@/views/Changelog.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: "/game-review",
       name: "GameReview",
       component: GameReview,
+    },
+    {
+      path: "/changelog",
+      name: "Changelog",
+      component: Changelog,
     },
   ],
 });
