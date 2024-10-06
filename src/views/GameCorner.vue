@@ -176,8 +176,12 @@
 </template>
 
 <script>
+import Navbar from '@/components/Navbar.vue';
 export default {
     name: "GameCorner",
+    components: {
+        Navbar
+    },
     data() {
         return {
             games: [
