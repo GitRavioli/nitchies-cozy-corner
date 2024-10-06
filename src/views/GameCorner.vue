@@ -62,12 +62,14 @@
                         <div
                             class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-2 gap-6 justify-items-center">
                             <div class="bg-[#D3D3D3] p-6 rounded-lg shadow-lg flex flex-col transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 items-center"
-                                v-for="(game, index) in games" :key="game.id"
-                                style="border: 4px solid #999; max-width: 250px;">
-                                <div class="bg-[#000] w-full h-30 rounded-md mb-4 relative">
-                                    <img :src="game.image" alt="Game"
-                                        class="w-full h-full object-center object-contain rounded-md" />
-                                </div>
+                                v-for="(game, index) in games" :key="index"
+                                :style="{ border: '4px solid #999', maxWidth: '250px' }">
+                                <router-link :to="{ name: 'GameReview', params: { title: game.title } }" class="w-full">
+                                    <div class="bg-[#000] w-full h-30 rounded-md mb-4 relative">
+                                        <img :src="game.image" alt="Game"
+                                            class="w-full h-full object-center object-contain rounded-md" />
+                                    </div>
+                                </router-link>
                                 <p
                                     class="text-xs sm:text-sm md:text-base lg:text-lg font-pixel-proper font-semibold text-[#333] text-center mb-4">
                                     {{ game.title || 'Unknown Game' }}
@@ -150,128 +152,92 @@
                     <section
                         class="bg-[#8A5A35] p-8 rounded-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 mb-12">
                         <h2
-                            class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold font-pixel text-center text-[#F1E9D3] mb-4">
-                            Favorite Cozy Game Genres</h2>
-                        <div class="flex flex-wrap justify-center items-center gap-4">
-                            <span
-                                class="bg-[#F1E9D3] text-[#8A5A35] px-3 py-1 rounded-full font-pixel-proper">Simulation</span>
-                            <span
-                                class="bg-[#F1E9D3] text-[#8A5A35] px-3 py-1 rounded-full font-pixel-proper">Adventure</span>
-                            <span
-                                class="bg-[#F1E9D3] text-[#8A5A35] px-3 py-1 rounded-full font-pixel-proper">Puzzle</span>
-                            <span class="bg-[#F1E9D3] text-[#8A5A35] px-3 py-1 rounded-full font-pixel-proper">Visual
-                                Novels</span>
-                        </div>
+                            class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold font-pixel text-center text-[#F1E9D3] mb-8">
+                            Favorite Cozy Game Genres
+                        </h2>
+                        <ul class="list-disc text-[#F1E9D3] pl-6">
+                            <li class="text-xs sm:text-sm md:text-base">Life Simulation</li>
+                            <li class="text-xs sm:text-sm md:text-base">Adventure</li>
+                            <li class="text-xs sm:text-sm md:text-base">Farming</li>
+                            <li class="text-xs sm:text-sm md:text-base">Puzzle</li>
+                            <li class="text-xs sm:text-sm md:text-base">Exploration</li>
+                        </ul>
                     </section>
                 </div>
             </div>
         </div>
 
-        <!-- Footer with Pixel Art Icons and Back-to-Top Button -->
-        <footer class="w-full py-6 text-center sm:py-8 lg:py-10 relative">
-            <p class="font-pixel text-[#5E5242] text-sm sm:text-base lg:text-md">&copy; 2024 Cozy Cabin. All rights
-                reserved.
-            </p>
-
-            <div class="mt-6">
-                <!-- Back-to-Top with Pixelated Handheld Game Console -->
-                <img :style="consoleStyle" src="/Img/handheld-game-console.png" alt="Handheld Console Icon"
-                    class="w-8 h-8 inline-block sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
-                <a href="#" class="font-pixel text-[#5E5242] text-sm sm:text-base lg:text-lg" :style="textStyle">Back to
-                    top</a>
+        <footer class="bg-[#834458] text-white py-6 mt-auto">
+            <div class="container mx-auto text-center">
+                <p class="font-pixel">© 2024 Cozy Gaming Corner. All rights reserved.</p>
             </div>
         </footer>
     </div>
 </template>
 
-
-<script setup>
-
-import stardewImage from '/Img/stardew-valley-logo.webp';
-import hadesImage from '/Img/hades.jpg';
-import longDarkImage from '/Img/the_long_dark.jpg';
-import animalCrossing from '/Img/animal_crossing.jpeg';
-
-</script>
-
 <script>
-import { Icon } from '@iconify/vue'; // Correct way to import Iconify
-import Navbar from '@/components/Navbar.vue';
-
 export default {
+    name: "GameCorner",
     data() {
         return {
             games: [
                 {
                     title: "Hades",
-                    description: "In this action-packed roguelike, you play as Zagreus, the son of Hades, battling your way out of the Underworld.",
-                    image: hadesImage,
+                    image: "/Img/hades.jpg",
+                    description: "A rogue-like dungeon crawler that combines fast-paced action with a rich narrative.",
+                    reviews: [
+                        "An exhilarating blend of action and storytelling! ⭐⭐⭐⭐⭐",
+                        "An addictive gameplay loop that keeps you coming back for more! ⭐⭐⭐⭐"
+                    ]
                 },
                 {
                     title: "The Long Dark",
-                    description: "A survival adventure set in the Canadian wilderness, The Long Dark challenges you to endure harsh winters and limited resources.",
-                    image: longDarkImage,
+                    image: "/Img/the_long_dark.jpg",
+                    description: "A thoughtful exploration survival game set in the frigid Canadian wilderness.",
+                    reviews: [
+                        "A hauntingly beautiful experience that challenges you to survive! ⭐⭐⭐⭐",
+                        "Perfect for those who love slow-paced, immersive gameplay. ⭐⭐⭐⭐"
+                    ]
                 },
                 {
                     title: "Animal Crossing",
-                    description: "In Animal Crossing, you explore a haunted island filled with lovable spirits, crafting and collecting along the way to brighten the world.",
-                    image: animalCrossing,
+                    image: "/Img/animal_crossing.jpeg",
+                    description: "A social simulation game where you can create your dream village.",
+                    reviews: [
+                        "A perfect escape from reality! ⭐⭐⭐⭐⭐",
+                        "So calming and enjoyable; it never gets old! ⭐⭐⭐⭐⭐"
+                    ]
                 },
                 {
                     title: "Stardew Valley",
-                    description: "In Stardew Valley, you escape to the countryside to rebuild a farm, grow crops, raise animals, and become part of a thriving community.",
-                    image: stardewImage,
+                    image: "/Img/stardew-valley-logo.webp",
+                    description: "A charming farming simulation game that lets you build your own farm.",
+                    reviews: [
+                        "A delightful experience; you can truly lose yourself in it! ⭐⭐⭐⭐⭐",
+                        "The ultimate cozy game for relaxation! ⭐⭐⭐⭐⭐"
+                    ]
                 },
-            ],
+            ]
         };
-    },
-    components: {
-        Navbar
     }
 };
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-.font-pixel {
-    font-family: 'Press Start 2P', cursive;
+<style scoped>
+body {
+    font-family: 'Pixel', sans-serif;
 }
 
-
-.font-pixel-proper {
-    font-family: 'Press Start 2P', cursive;
-    text-transform: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Pixel', sans-serif;
 }
 
-@media (max-width: 1536px) {
-    gameshelf-grid {
-        grid-column: 2;
-    }
-}
-
-/* Heart burst animation */
-@keyframes pulse {
-    0% {
-        transform: scale(0.8);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.heart-burst-enter-active,
-.heart-burst-leave-active {
-    transition: opacity 0.5s;
-}
-
-.heart-burst-enter,
-.heart-burst-leave-to {
-    opacity: 0;
+p {
+    font-family: 'Pixel Proper', sans-serif;
 }
 </style>
