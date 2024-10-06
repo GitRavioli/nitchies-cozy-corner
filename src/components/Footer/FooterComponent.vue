@@ -12,7 +12,7 @@
         <div class="mt-6">
             <!-- View Changelog Button -->
             <div class="mt-4">
-                <a href="#changelog" class=" font-pixel text-[#5E5242] text-sm sm:text-base lg:text-lg">
+                <a href="/changelog" class=" font-pixel text-[#5E5242] text-sm sm:text-base lg:text-lg">
                     View Changelog
                 </a>
             </div>
