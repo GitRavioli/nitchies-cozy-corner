@@ -22,7 +22,7 @@
                         dreamy landscapes, this is your place to unwind.
                         <br />
                         <br />
-                        Grab a cup of tea, stay a while, and explore the games that bring calm to our busy days. 🌿
+                        Grab a cup of tea, stay a while, and explore the games that bring calm to our busy days! 🌿
                     </p>
                 </div>
             </div>
@@ -167,9 +167,19 @@
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="py-4 text-center bg-[#E7D9C4] w-full">
-            <p class="font-pixel-proper text-sm text-[#5E5242]">© 2024 Cozy Gaming Corner. All rights reserved.</p>
+        <!-- Footer with Pixel Art Icons and Back-to-Top Button -->
+        <footer class="w-full py-6 text-center sm:py-8 lg:py-10 relative">
+            <p class="font-pixel text-[#5E5242] text-sm sm:text-base lg:text-md">&copy; 2024 Cozy Cabin. All rights
+                reserved.
+            </p>
+
+            <div class="mt-6">
+                <!-- Back-to-Top with Pixelated Handheld Game Console -->
+                <img :style="consoleStyle" src="/Img/handheld-game-console.png" alt="Handheld Console Icon"
+                    class="w-8 h-8 inline-block sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
+                <a href="#" class="font-pixel text-[#5E5242] text-sm sm:text-base lg:text-lg" :style="textStyle">Back to
+                    top</a>
+            </div>
         </footer>
     </div>
 </template>
