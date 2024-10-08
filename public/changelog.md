@@ -19,3 +19,7 @@
 - Updated the daily quote on the homepage to update every 6 hours, rather than every 24.
 
 - Add a changelog page to keep track of all website updates.
+
+## 2024-10-8
+
+- Fixed a bug where the page would scroll to the bottom of the Game Reviews page upon clicking on a gameboy card in my Game Corner page.
