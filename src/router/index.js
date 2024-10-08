@@ -40,6 +40,10 @@ const router = createRouter({
       component: Changelog,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    // Scroll to top on navigation
+    return { top: 0 };
+  },
 });
 
 export default router;

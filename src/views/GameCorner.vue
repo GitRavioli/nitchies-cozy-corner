@@ -64,7 +64,7 @@
                             <div class="bg-[#D3D3D3] p-6 rounded-lg shadow-lg flex flex-col transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 items-center"
                                 v-for="(game, index) in games" :key="index"
                                 :style="{ border: '4px solid #999', maxWidth: '250px' }">
-                                <router-link :to="{ name: 'GameReview', params: { title: game.title } }" class="w-full">
+                                <router-link to="/game-review" class="w-full">
                                     <div class="bg-[#000] w-full h-30 rounded-md mb-4 relative">
                                         <img :src="game.image" alt="Game"
                                             class="w-full h-full object-center object-contain rounded-md" />
