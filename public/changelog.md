@@ -23,3 +23,7 @@
 ## 2024-10-8
 
 - Fixed a bug where the page would scroll to the bottom of the Game Reviews page upon clicking on a gameboy card in my Game Corner page.
+
+## 2024-10-19
+
+- Update the Game Shelf gameboy card so that the user can cycle through the games using the D-pad buttons.
