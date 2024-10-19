@@ -3,7 +3,7 @@
         <!-- Header Section: About Page -->
         <header class="relative w-full h-[40rem] bg-[#E7D9C4] bg-opacity-80 sm:h-[30rem] md:h-[35rem] lg:h-[50rem]">
             <div
-                class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-bottom bg-[url('src/assets/cozy_gamer.jpeg')] pointer-events-none">
+                class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-bottom bg-[url('/Img/cozy_gamer.jpeg')] pointer-events-none">
             </div>
 
             <!-- Navigation -->
