@@ -17,6 +17,8 @@
                     class="flex items-center justify-center py-2 text-[#4A4A4A] text-sm font-pixel">About</a>
                 <a href="/game-corner" @click="toggleMenu"
                     class="flex items-center justify-center py-2 text-[#4A4A4A] text-sm font-pixel">Game Corner</a>
+                    <a href="/game-library" @click="toggleMenu"
+                    class="flex items-center justify-center py-2 text-[#4A4A4A] text-sm font-pixel">Game Library</a>
             </div>
         </div>
     </nav>
@@ -39,6 +41,10 @@
             <router-link to="/game-corner"
                 class="bg-[#FDDFB7] py-1 px-2 rounded-lg shadow-md hover:bg-[#D4A57E] transition duration-300 ease-in-out font-pixel text-[#4A4A4A] flex items-center justify-center text-sm">
                 Game Corner
+            </router-link>
+            <router-link to="/game-library"
+                class="bg-[#FDDFB7] py-1 px-2 rounded-lg shadow-md hover:bg-[#D4A57E] transition duration-300 ease-in-out font-pixel text-[#4A4A4A] flex items-center justify-center text-sm">
+                Game Library
             </router-link>
         </div>
     </nav>
