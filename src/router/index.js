@@ -5,6 +5,7 @@ import GameCorner from "@/views/GameCorner.vue";
 import AboutView from "../views/AboutView.vue";
 import HomeView from "../views/HomeView.vue";
 import Changelog from "@/views/Changelog.vue";
+import GameLibrary from "@/views/GameLibrary.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,9 +36,19 @@ const router = createRouter({
       component: GameReview,
     },
     {
+      path: "/game-library",
+      name: "GameLibrary",
+      component: GameLibrary,
+    },
+    {
       path: "/changelog",
       name: "Changelog",
       component: Changelog,
+    },
+    {
+      path: "/game-library",
+      name: "GameLibrary",
+      component: GameLibrary,
     },
   ],
   scrollBehavior(to, from, savedPosition) {
